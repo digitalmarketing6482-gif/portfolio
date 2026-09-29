@@ -81,54 +81,54 @@ export const config = {
             title: "24Hours Realtime Chat App",
             category: "Full Stack / Realtime",
             technologies: "Next.js, React, Node.js, WebSockets, MongoDB, Tailwind CSS",
-            image: "/images/VoteChain.png",
-            description: "High-performance real-time messaging application supporting instant message delivery, room channels, presence indicators, responsive UI, and secure token authentication.",
+            image: "/images/projects/chat_app.jpg",
+            description: "High-performance real-time messaging application supporting instant message delivery, room channels, presence indicators, responsive dark UI, and secure token authentication.",
             link: "https://github.com/24hourschatapp-sys"
         },
         {
             id: 2,
-            title: "Tensor-Flicky AI",
-            category: "AI / Machine Learning",
-            technologies: "Python, TensorFlow, PyTorch, FastAPI, React, Hugging Face",
-            image: "/images/Drishti.png",
-            description: "Intelligent machine learning and data processing system leveraging deep neural networks and transformer models for real-time predictions and analytics.",
+            title: "Tensor-Flicky AI Agent",
+            category: "AI & Vector DB / Ollama",
+            technologies: "Python, Ollama, ChromaDB, Vector Databases, FastAPI, Mistral",
+            image: "/images/projects/tensor_flicky.jpg",
+            description: "Intelligent autonomous AI agent built with Ollama, Modern Python, ChromaDB, and Vector Databases for large knowledge base retrieval and automated calling workflows.",
             link: "https://github.com/24hourschatapp-sys/Tensor-Flicky"
         },
         {
             id: 3,
-            title: "Next.js Modern E-Commerce",
-            category: "Full Stack / E-Commerce",
-            technologies: "Next.js, React, Node.js, MongoDB, Stripe, Tailwind CSS",
-            image: "/images/Prodesk.png",
-            description: "Full-stack e-commerce platform featuring dynamic product catalogs, optimized server-side rendering, shopping cart state management, and seamless Stripe checkout.",
-            link: "https://github.com/24hourschatapp-sys/ecommerce-next-app"
+            title: "Silver-Pancake AI Calling Agent",
+            category: "AI Calling Platform / Agentic AI",
+            technologies: "Next.js, TypeScript, OpenAI/LLMs, WebRTC, Tailwind CSS",
+            image: "/images/projects/silver_pancake.jpg",
+            description: "Enterprise AI calling agent platform enabling businesses to deploy conversational AI voice and customer support agents.",
+            link: "https://github.com/24hourschatapp-sys/silver-pancake"
         },
         {
             id: 4,
-            title: "Ollama & Mistral AI Assistant",
-            category: "LLM Engineering / AI",
-            technologies: "Ollama, Mistral, LangChain, Python, Next.js, Docker",
-            image: "/images/Phoenix3.0.png",
-            description: "Autonomous AI assistant running local open-source LLMs with Ollama and Mistral. Features contextual retrieval, function calling, streaming responses, and low-latency inference.",
-            link: "https://github.com/24hourschatapp-sys"
+            title: "Next.js Modern E-Commerce",
+            category: "Full Stack / E-Commerce",
+            technologies: "Next.js, TypeScript, Tailwind CSS, Local Storage, Stripe Testing",
+            image: "/images/projects/ecommerce_next.jpg",
+            description: "Dynamic e-commerce website built with Next.js, TypeScript, and Tailwind CSS with local storage cart persistence and payment testing options.",
+            link: "https://github.com/24hourschatapp-sys/ecommerce-next-app"
         },
         {
             id: 5,
-            title: "RedxChess AI Engine",
-            category: "AI / Game Engine",
-            technologies: "TypeScript, WebAssembly, Stockfish, Three.js, React",
-            image: "/images/RedxChess.png",
-            description: "Interactive high-performance chess arena featuring an integrated chess engine and AI persona. Test your tactics against the engine right here on this portfolio!",
-            link: "/play"
+            title: "Cloud Microservices & Node APIs",
+            category: "Backend / Cloud & Docker",
+            technologies: "Node.js, Express, Docker, AWS, MongoDB, Supabase, Firebase",
+            image: "/images/projects/cloud_api_hub.jpg",
+            description: "Robust backend API architecture with OAuth authentication, database clustering, Docker containerization, and cloud integrations.",
+            link: "https://github.com/24hourschatapp-sys/node-code"
         },
         {
             id: 6,
-            title: "Cloud Microservices & Auth Hub",
-            category: "Backend / Cloud",
-            technologies: "Node.js, Express, Docker, AWS, Supabase, Firebase",
-            image: "/images/FloodSpaces.png",
-            description: "Production-ready backend architecture providing OAuth authentication, database clustering, Dockerized deployments, and serverless AWS integrations.",
-            link: "https://github.com/24hourschatapp-sys/node-code"
+            title: "RedxChess 3D AI Arena",
+            category: "3D Web / AI Game Engine",
+            technologies: "TypeScript, Three.js, Stockfish AI, React, WebAssembly",
+            image: "/images/projects/redx_chess.jpg",
+            description: "Interactive high-performance 3D chess arena featuring an integrated chess engine and AI persona. Test your tactics against the engine right here on this portfolio!",
+            link: "/play"
         }
     ],
     contact: {

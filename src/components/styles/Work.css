@@ -107,24 +107,69 @@
 
 .work-image-in {
   position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-image-in:hover {
+  transform: translateY(-4px);
+  border-color: var(--accentColor);
+  box-shadow: 0 18px 40px rgba(194, 164, 255, 0.22);
+}
+
+.work-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(10, 10, 15, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  z-index: 3;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.work-image-in:hover .work-badge {
+  background: var(--accentColor);
+  color: #000;
+  border-color: var(--accentColor);
 }
 
 .work-link {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: var(--backgroundColor);
-  width: 50px;
-  border-radius: 50px;
-  height: 50px;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 46px;
+  border-radius: 50%;
+  height: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5),
-    inset 0px 0px 10px 0px #393939;
-  transition: 0.3s;
+  font-size: 22px;
+  color: var(--accentColor);
+  border: 1px solid rgba(194, 164, 255, 0.4);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   opacity: 0;
+  transform: scale(0.8);
+  z-index: 3;
 }
 
 .work-image a:hover {
@@ -133,6 +178,7 @@
 
 .work-image a:hover .work-link {
   opacity: 1;
+  transform: scale(1);
 }
 
 .work-image video {
@@ -146,8 +192,16 @@
 }
 
 .work-image img {
-  max-width: 100%;
-  max-height: 350px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.work-image-in:hover img {
+  transform: scale(1.04);
 }
 
 @media only screen and (max-height: 900px) {

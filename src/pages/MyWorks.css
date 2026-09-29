@@ -71,32 +71,89 @@
 
 .myworks-card-number {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 14px;
-  color: var(--accentColor);
+  top: 14px;
+  left: 14px;
+  font-size: 13px;
+  color: #fff;
   font-weight: 600;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(10, 10, 15, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 5px 12px;
   border-radius: 20px;
-  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 2;
+}
+
+.myworks-card-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 12px;
+  color: var(--accentColor);
+  font-weight: 500;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(194, 164, 255, 0.3);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.myworks-card:hover .myworks-card-badge {
+  background: var(--accentColor);
+  color: #000;
+}
+
+.myworks-card-hover-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--accentColor);
+  border: 1px solid rgba(194, 164, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.myworks-card:hover .myworks-card-hover-icon {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .myworks-card-image {
   width: 100%;
   height: 220px;
   overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .myworks-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .myworks-card:hover .myworks-card-image img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .myworks-card-info {

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { config } from "../config";
+import { FaGithub } from "react-icons/fa";
+import { MdSportsEsports, MdArrowOutward } from "react-icons/md";
 import "./MyWorks.css";
 
 const MyWorks = () => {
@@ -12,17 +14,34 @@ const MyWorks = () => {
         <h1>
           All <span>Works</span>
         </h1>
-        <p>A collection of all my projects and creations</p>
+        <p>A collection of all my projects, systems, and open-source GitHub repositories</p>
       </div>
 
       <div className="myworks-grid">
         {config.projects.map((project, index) => {
           const isInternalLink = Boolean(project.link?.startsWith("/"));
+          const isGame = Boolean(project.link?.startsWith("/play"));
           const cardContent = (
             <>
               <div className="myworks-card-number">0{index + 1}</div>
               <div className="myworks-card-image">
                 <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
+                <div className="myworks-card-badge">
+                  {isGame ? (
+                    <>
+                      <MdSportsEsports />
+                      <span>Play Game</span>
+                    </>
+                  ) : (
+                    <>
+                      <FaGithub />
+                      <span>GitHub</span>
+                    </>
+                  )}
+                </div>
+                <div className="myworks-card-hover-icon">
+                  <MdArrowOutward />
+                </div>
               </div>
               <div className="myworks-card-info">
                 <h3>{project.title}</h3>
